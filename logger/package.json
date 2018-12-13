@@ -1,0 +1,17 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.0.0",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "^5.3.16",
+    "nats": "^1.2.1"
+  }
+}
