@@ -5,7 +5,7 @@ const WebSocket     = require("ws")
 
 const NATS = require("nats")
 
-const nats = NATS.connect(config)
+const nats = NATS.connect(config.nats)
 
 const app = express()
 

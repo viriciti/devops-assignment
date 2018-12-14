@@ -61,7 +61,7 @@ const readOutLoud = (vehicleName) => {
 
 					nats.publish(`vehicle.${vehicleName}`, obj, cb)
 
-				}, Math.ceil(Math.random() * 150))
+				}, Math.random() * 1000)
 			}
 		})))
 }
@@ -70,7 +70,7 @@ const busName = process.env.BUS_NAME ? process.env.BUS_NAME : "test-bus-1"
 
 // This next few lines simulate Henk's (our favorite driver) shift
 async.forever((cb) => {
-	console.log("Henk checks in on test-bus-1 starting his shift...")
+	console.log(`Henk checks in on ${busName} starting his shift...`)
 	readOutLoud(busName)
 		.once("finish", () => {
 			console.log("henk is on the last stop and he is taking a cigarrete while waiting for his next trip")
