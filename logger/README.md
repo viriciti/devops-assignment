@@ -9,7 +9,7 @@ To run this app all you need to do is:
 npm i
 npm start
 ```
-All configurations are stored on `/config` folder, It consist of `default` and `production` config, and to run this app on production make sure that you have an environment variable `NODE_EV` with value `production`
+All configurations are stored on `/config` folder, It consist of `default` and `production` config, and to run this app on production make sure that you have an environment variable `NODE_ENV` with value `production`
 
 Building docker container for this app is easy, run this following command and you're done:
 ```
