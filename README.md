@@ -39,7 +39,7 @@ As a versatile devops engineer you have to deploy a Kubernetes cluster containin
 
 We will provide you with a sandbox environment on AWS called `*.trials.viriciti.com` where you will be full admin, so you can go nuts.
 
-As developers of these three beautiful services that are in this repo, of course, we need proper CI/CD!
+As developers of these three beautiful services that are in this repo, of course, we need proper CI/CD!. You're free choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is used on our production environment right now.
 
 ### Pointers
 - [ ] Provision your cluster using `kops` (https://github.com/kubernetes/kops) following [this tutorial](https://github.com/kubernetes/kops/blob/master/docs/aws.md#testing-your-dns-setup). We have already created the DNS records pointing to Route 53, which you can test with: `dig ns trials.viriciti.com`
@@ -48,10 +48,9 @@ As developers of these three beautiful services that are in this repo, of course
 - [ ] You can use Let's Encrypt to create the necessary certificates (https://letsencrypt.org/)
 - [ ] If you want to enable monitoring, [Prometheus](https://prometheus.io) is a great choice
 - [ ] When enabling Gitlab, use its [the available Helm Chart](https://docs.gitlab.com/ee/install/kubernetes/gitlab_chart.html)
-- [ ] When setting up CI/CD, use Gitlab pipelines
 
 ## Questions
-If you have any questions about the assignment, the project setup or you're simply stuck, feel free to contact us at <a href='mailto:s.surur@viriciti.com'>s.surur@viriciti.com</a>. Please do not hesitate for this! You are also more then welcome to come by the office at any time. We're always ready to help. The idea is that something is created that you learn from and in the end can be proud of.
+If you have any questions about the assignment, the project setup or you're simply stuck, feel free to contact us at <a href='mailto:s.surur@viriciti.com'>s.surur@viriciti.com</a>, <a href='mailto:s.rijk@viriciti.com'>s.rijk@viriciti.com</a> and <a href='mailto:t.thijs@viriciti.com'>t.thijs@viriciti.com</a>. Please do not hesitate for this! You are also more then welcome to come by the office at any time. We're always ready to help. The idea is that something is created that you learn from and in the end can be proud of.
 
 Finally, you will present your process, technical decisions and outcome to us. Looking forward to it!
 
