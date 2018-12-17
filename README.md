@@ -39,7 +39,7 @@ As a versatile devops engineer you have to deploy a Kubernetes cluster containin
 
 We will provide you with a sandbox environment on AWS called `*.trials.viriciti.com` where you will be full admin, so you can go nuts.
 
-As developers of these three beautiful services that are in this repo, of course, we need proper CI/CD!
+As developers of these three beautiful services that are in this repo, of course, we need proper CI/CD!. You're free choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is used on our production environment right now.
 
 ### Pointers
 - [ ] Provision your cluster using `kops` (https://github.com/kubernetes/kops) following [this tutorial](https://github.com/kubernetes/kops/blob/master/docs/aws.md#testing-your-dns-setup). We have already created the DNS records pointing to Route 53, which you can test with: `dig ns trials.viriciti.com`
