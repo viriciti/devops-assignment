@@ -29,7 +29,7 @@ This application will simulate data generation from vehicles. You can run multip
 ## The assignment
 We have provided you with a Kubernetes cluster (version 1.12) running in AWS. This cluster already contains a gitlab installation (gitlab.trials.viriciti.com) with an integrated docker registry (registry.trials.viriciti.com) and an NGINX Ingress Controller. A `*.trials.viriciti.com` DNS record points to that ingress controller.
 
-As developers of these three beautiful services that are in this repo, of course, we need proper CI/CD!. You're free choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is already available in the cluster.
+As developers of these two beautiful services that are in this repo, of course, we need proper CI/CD! You're free choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is already available in the cluster.
 
 You're free to come up with your own flow for the CI/CD. There are a couple requirements though:
 - [ ] Deploying an app to "production" should involve a manual action (big red button, slack message etc.)
@@ -38,10 +38,9 @@ You're free to come up with your own flow for the CI/CD. There are a couple requ
 - [ ] Multiple feature branches should be able to live alongide each other in the cluster (and be accessible via different URLs).
 
 ### Pointers
-- [ ] Use Helm Charts to centrally configure and deploy services (https://github.com/helm/charts)
-- [ ] Think of auto-scaling
-- [ ] You can use Let's Encrypt to create the necessary certificates (https://letsencrypt.org/)
-- [ ] If you want to enable monitoring, [Prometheus](https://prometheus.io) is a great choice
+- Use Helm Charts to centrally configure and deploy services (https://github.com/helm/charts)
+- You can use Let's Encrypt to create the necessary certificates (https://letsencrypt.org/)
+- If you want to enable monitoring, [Prometheus](https://prometheus.io) is a great choice
 
 ## Questions
 If you have any questions about the assignment, the project setup or you're simply stuck, feel free to contact us at <a href='mailto:i.klop@viriciti.com'>i.klop@viriciti.com</a>, <a href='mailto:s.surur@viriciti.com'>s.surur@viriciti.com</a>, <a href='mailto:s.rijk@viriciti.com'>s.rijk@viriciti.com</a> and <a href='mailto:t.thijs@viriciti.com'>t.thijs@viriciti.com</a>. Please do not hesitate for this! You are also more then welcome to come by the office at any time. We're always ready to help. The idea is that something is created that you learn from and in the end can be proud of.
