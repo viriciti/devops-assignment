@@ -18,7 +18,7 @@ As can be seen, the connecting web browsers will connect over an AWS Elastic Loa
 Finally, as you can see - in support of CI/CD - there is `gitlab`.
 
 ### NATS
-To connect all applications a HA (High Availability) NATS cluster needs to be deployed. This service will connect the `broadcaster` with the `web-server` and `logger`, so you need to make sure that they are configured correctly.
+To connect all applications a HA (High Availability) NATS cluster needs to be deployed. This service will connect the `broadcaster` with the `web-server`, so you need to make sure that they are configured correctly.
 
 ### Web Server
 Multiple Web Server replicas, preferably in different machines, should be deployed (take a look at kubernetes [`PodAntiAffinity`](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/)). The service will serve an HTML page with a `javascript` file that connects to a `WebSocket` server on the same `HTTP` server. Extra points if you can make this application scale in regard of connected websocket clients. Example of metrics that would be suitable for this process are: `number-of-connected-client`, `number-of-page-request`.
