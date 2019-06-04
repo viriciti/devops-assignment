@@ -35,7 +35,7 @@ You're free to come up with your own flow for the CI/CD. There are a couple requ
 - [ ] Deploying an app to "production" should involve a manual action (big red button, slack message etc.)
 - [ ] Developers should be able to rollback a deployment.
 - [ ] The CI/CD pipeline should register the web-server to the ingress controller to be available externally with a URL (something.trials.viriciti.com).
-- [ ] Multiple feature branches should be able to live alongide each other in the cluster (and be accessible via different URLs).
+- [ ] Multiple feature branches should be able to live alongside each other in the cluster (and be accessible via different URLs).
 
 ### Pointers
 - Use Helm Charts to centrally configure and deploy services (https://github.com/helm/charts)
