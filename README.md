@@ -1,5 +1,5 @@
 # ViriCiti DevOps Assignment
-![](https://imgs.xkcd.com/comics/tools.png)
+![](http://turnoff.us/image/en/before-devops-after-devops.png)
 
 ## Introduction
 This repository holds the ViriCiti DevOps assignment. In this project you will find a folder that holds a microservice, supplied with a Dockerfile.
