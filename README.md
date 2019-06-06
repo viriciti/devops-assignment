@@ -16,9 +16,9 @@ Multiple Web Server replicas, preferably in different machines, should be deploy
 ## The assignment
 We have provided you with a Kubernetes cluster (version 1.12) running in AWS. This cluster already contains an NGINX Ingress Controller. A `*.trials.viriciti.com` DNS record points to that ingress controller.
 
-As developers of this beautiful service, of course, we need proper CI/CD! You're free choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is what we use in production.
+As developers of this beautiful service, of course, we need proper CI/CD! You're free to choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is what we use in production.
 
-You're free to come up with your own flow for the CI/CD. There are a couple requirements though:
+You're free to come up with your own flow for the CI/CD. There are a couple of requirements though:
 - [ ] Deploying an app to "production" should involve a manual action (big red button, slack message etc.)
 - [ ] Developers should be able to rollback a deployment.
 - [ ] The CI/CD pipeline should register the web-server to the ingress controller to be available externally with a URL (something.trials.viriciti.com).
