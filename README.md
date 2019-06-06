@@ -34,7 +34,7 @@ You're free to come up with your own flow for the CI/CD. There are a couple of r
 - The tests can be executed by running `npm test`.
 
 ## Questions
-If you have any questions about the assignment, the project setup or you're simply stuck, feel free to contact us at <a href='mailto:i.klop@viriciti.com'>i.klop@viriciti.com</a>, <a href='mailto:s.surur@viriciti.com'>s.surur@viriciti.com</a>, <a href='mailto:s.rijk@viriciti.com'>s.rijk@viriciti.com</a> and <a href='mailto:t.thijs@viriciti.com'>t.thijs@viriciti.com</a>. Please do not hesitate for this! You are also more then welcome to come by the office at any time. We're always ready to help. The idea is that something is created that you learn from and in the end can be proud of.
+If you have any questions about the assignment, the project setup or you're simply stuck, feel free to contact us at <a href='mailto:i.klop@viriciti.com'>i.klop@viriciti.com</a> and <a href='mailto:s.surur@viriciti.com'>s.surur@viriciti.com</a>. Please do not hesitate for this! You are also more then welcome to come by the office at any time. We're always ready to help. The idea is that something is created that you learn from and in the end can be proud of.
 
 Finally, you will present your process, technical decisions and outcome to us. Looking forward to it!
 
