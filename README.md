@@ -16,7 +16,7 @@ Web Server is a simple stateless service that serves a simple HTTP message. You 
 ## The assignment
 We have provided you with a Kubernetes cluster (version 1.12) running in AWS. This cluster already contains an NGINX Ingress Controller. A `*.trials.viriciti.com` DNS record points to that ingress controller.
 
-As developers of this beautiful service, of course, we need proper CI/CD! You're free to choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is what we use in production. We have already installed Gitlab for you using the Gitlab helm chart ([https://docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)). Access https://gitlab.trials.viriciti.com for Gitlab and https://registry.trials.viriciti.com for the Docker registry.
+As developers of this beautiful service, of course, we need proper CI/CD! You're free to choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is what we use in production. We have already installed Gitlab for you using the Gitlab helm chart ([https://docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)). Access https://gitlab.trials.viriciti.com for Gitlab and https://registry.trials.viriciti.com for the Docker registry. Check out https://docs.gitlab.com/charts/installation/deployment.html#initial-login for the credentials.
 
 You're free to come up with your own flow for the CI/CD. There are a couple of requirements though:
 - [ ] The CI/CD pipeline should register the web-server to the ingress controller to be available externally with a URL (something.trials.viriciti.com).
