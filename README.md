@@ -16,7 +16,7 @@ Multiple Web Server replicas, preferably in different machines, should be deploy
 ## The assignment
 We have provided you with a Kubernetes cluster (version 1.12) running in AWS. This cluster already contains an NGINX Ingress Controller. A `*.trials.viriciti.com` DNS record points to that ingress controller.
 
-As developers of this beautiful service, of course, we need proper CI/CD! You're free to choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is what we use in production.
+As developers of this beautiful service, of course, we need proper CI/CD! You're free to choose which CI/CD platform to use, we suggest GitLab with GitLab runner since it is what we use in production. We have already installed Gitlab for you using the Gitlab helm chart ([https://docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)). Access https://gitlab.trials.viriciti.com for Gitlab and https://registry.trials.viriciti.com for the Docker registry.
 
 You're free to come up with your own flow for the CI/CD. There are a couple of requirements though:
 - [ ] Deploying an app to "production" should involve a manual action (big red button, slack message etc.)
@@ -25,11 +25,8 @@ You're free to come up with your own flow for the CI/CD. There are a couple of r
 - [ ] Multiple feature branches should be able to live alongside each other in the cluster (and be accessible via different URLs).
 
 ### Pointers
-- You can use Let's Encrypt to create the necessary certificates (https://letsencrypt.org/)
+- If you want to, you can use Let's Encrypt to create the necessary certificates (https://letsencrypt.org/).
 - You can use [`helm`](https://helm.sh/) to install certain applications in Kubernetes.
-- You can use helm to install Gitlab: [https://docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)
-  - Gitlab helm install requires certain DNS records to point to the ingress controller that the helm chart creates. You will have access to AWS Route 53 for the `trials.viriciti.com` domain.
-  - In order to use Docker in Docker, the Gitlab runners have to run in [privileged mode](https://docs.gitlab.com/ee/user/project/clusters/#security-of-gitlab-runners). The default setting of the helm chart is to disable this feature, make sure you override that setting.
 - NodeJS apps manage their dependencies in a package.json file, `npm install` installs the dependencies in a folder called `node_modules`.
 - The tests can be executed by running `npm test`.
 
