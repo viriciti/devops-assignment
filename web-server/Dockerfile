@@ -1,7 +1,4 @@
-FROM node:12-stretch
-
-RUN echo "Europe/Amsterdam" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
+FROM node:16
 
 COPY . /app
 

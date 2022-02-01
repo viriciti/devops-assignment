@@ -25,14 +25,15 @@ app.get("/fail", (req, res) => {
 	requestFailed.inc(1)
 })
 
-app.get("/metrics", (req, res) => {
-	res.end(promClient.register.metrics());
+app.get("/metrics", async (req, res) => {
+	const metrics = await promClient.register.metrics()
+	res.end(metrics)
 });
 
 module.exports = {
 	start(cb) {
-		server = app.listen(3000, () => {
-			console.log("HTTP server listening on port 3000")
+		server = app.listen(8080, () => {
+			console.log("HTTP server listening on port 8080")
 			cb()
 		})
 	},

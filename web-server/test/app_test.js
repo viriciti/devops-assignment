@@ -10,7 +10,7 @@ describe('the test', function() {
 	it('should should respond', function(done) {
 		const req = {
 			json: true,
-			uri: 'http://localhost:3000/',
+			uri: 'http://localhost:8080/',
 		}
 
 		request.get(req, (error, res, body) => {
